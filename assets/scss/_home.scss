@@ -1,0 +1,60 @@
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/img-eglise.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.btn {
+    background: $secondary;
+    color: black;
+    padding: 10px 20px;
+    border-radius: $radius;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.home-messes {
+    text-align: center;
+    padding: 20px;
+    h2 {
+        margin: 20px;
+    }
+}
+
+.home-annonces {
+    text-align: center;
+    padding: 20px;
+    h2 {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero{
+        padding: 80px;
+    }
+}
+
+@media (max-width: 498px) {
+    .hero{
+        padding: 50px 20px;
+        h2 {
+            font-size: 24px;
+        }
+    }
+}

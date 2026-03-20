@@ -1,0 +1,40 @@
+.activites {
+    padding: 40px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.activites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .activite-card {
+        background: $bg_light;
+        padding: 20px;
+        width: 250px;
+        border-radius: $radius;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+
+        h3 {
+            color: $primary;
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .activites-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}

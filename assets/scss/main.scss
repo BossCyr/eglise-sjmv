@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'annonces';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'messes';
+@import 'contact';
+@import 'paroisse';
+@import 'activites';
+@import 'groupes';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    .content {
+        flex: 1;
+    }
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "eglise-sjmv",
+  "version": "1.0.0",
+  "description": "Paroisse Saint Jean Marie Vianney - Sota, Adjarra",
+  "license": "ISC",
+  "author": "BossCyr",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/scss/:assets/css/"
+  }
+}
