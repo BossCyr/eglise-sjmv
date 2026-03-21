@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paroisse Saint Jean Marie Vianney - Messes</title>
+    <title>Messes - Paroisse - SJMV</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/app.js" defer></script>
 </head>
@@ -16,7 +16,7 @@
                     <ul class="nav-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="annonces.html">Annonces</a></li>
-                        <li><a href="messes.html">Messes</a></li>
+                        <li><a href="messes.html" class="active-link">Messes</a></li>
                         <li><a href="activites.html">Activités</a></li>
                         <li><a href="groupes.html">Groupes</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -31,35 +31,80 @@
             </div>
         </header>
         <main class="content">
-            <section class="messes">
-                <h2>Horraire des messes</h2>
+            <section class="messes-hero">
+                <h1>Horaires des Messes</h1>
+                <p>Rejoignez notre communauté pour la prière et l'Eucharistie.</p>
+            </section>
+        
+            <section class="messes-schedule">
                 <div class="messes-container">
-                    <div class="messe-card">
+                    <div class="messe-card highlight">
+                        <div class="card-icon">☀️</div>
                         <h3>Dimanche</h3>
-                        <p>06h00 - 1ère Messe</p>
-                        <p>07h30 - 2e Messe</p>
-                        <p>09h30 - 3e Messe</p>
+                        <div class="schedule-row">
+                            <span class="time">06h00</span>
+                            <span class="event">1<sup>ère</sup> Messe</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="time">07h30</span>
+                            <span class="event">2<sup>e</sup> Messe</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="time">09h30</span>
+                            <span class="event">3<sup>e</sup> Messe</span>
+                        </div>
                     </div>
+        
                     <div class="messe-card">
-                        <h3>Semaine</h3>
-                        <p>Lundi : 06h10 - Messe en l'honneur de St Joseph</p>
-                        <p>Mardi : 18h30</p>
-                        <p>Mercredi - Samedi : 06h45</p>
+                        <div class="card-icon">📅</div>
+                        <h3>En Semaine</h3>
+                        <div class="schedule-row">
+                            <span class="day">Lundi</span>
+                            <span class="time">06h10</span>
+                            <span class="desc">St Joseph</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Mardi</span>
+                            <span class="time">18h30</span>
+                            <span class="desc">Messe du soir</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="day">Mer - Sam</span>
+                            <span class="time">06h45</span>
+                            <span class="desc">Messe matinale</span>
+                        </div>
                     </div>
-                    <div class="messe-card">
-                        <h3>Evènements spéciaux</h3>
-                        <p>Veillée : 20h00</p>
-                        <p>Adoration : 23h00</p>
-                        <p>Vendredi - Temps de carême : 06h00</p>
+        
+                    <div class="messe-card special">
+                        <div class="card-icon">🕯️</div>
+                        <h3>Temps Spéciaux</h3>
+                        <div class="schedule-row">
+                            <span class="time">20h00</span>
+                            <span class="event">Veillée de prière</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="time">23h00</span>
+                            <span class="event">Adoration</span>
+                        </div>
+                        <div class="schedule-row">
+                            <span class="time">06h00</span>
+                            <span class="event">Chemin de Croix (Carême)</span>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="footer-content">
-                <p>Bienvenue à la paroisse Saint Jean Marie Vianney</p>
-                <p>Sota - Adjarra</p>
-                <p>Téléphone : +229 01 00 00 00 00</p>
+                <div class="footer-info">
+                    <h3>SJMV</h3>
+                    <p>Paroisse Saint Jean Marie Vianney</p>
+                    <p>Sota - Adjarra, Bénin</p>
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Téléphone :</strong> +229 01 00 00 00 00</p>
+                    <p>© 2026 - Tous droits réservés</p>
+                </div>
             </div>
         </footer>
     </div>

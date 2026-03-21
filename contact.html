@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paroisse Saint Jean Marie Vianney - Contact</title>
+    <title>Contact - Paroisse SJMV</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/app.js" defer></script>
 </head>
@@ -19,7 +19,7 @@
                         <li><a href="messes.html">Messes</a></li>
                         <li><a href="activites.html">Activités</a></li>
                         <li><a href="groupes.html">Groupes</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html" class="active-link">Contact</a></li>
                         <li><a href="paroisse.html">A propos</a></li>
                     </ul>
                     <div class="menu-toggle">
@@ -31,20 +31,94 @@
             </div>
         </header>
         <main class="content">
-            <section class="contact">
-                <h2>Contact</h2>
-                <div class="contact-card">
-                    <p><strong>Addresse :</strong> Sota, Adjarra</p>
-                    <p><strong>Téléphone :</strong> +229 01 00 00 00 00</p>
-                    <p><strong>Email :</strong> paroisse@gmail.com</p>
-                </div>
+            <section class="contact-hero">
+                <h1>Contactez la Paroisse</h1>
+                <p>Notre secrétariat vous accueille pour vos démarches et intentions de prière.</p>
             </section>
+        
+            <div class="contact-grid">
+                <section class="contact-info">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>Quartier Sota, Adjarra, Bénin</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p>+229 01 00 00 00 00</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">✉️</span>
+                            <div>
+                                <h3>Email</h3>
+                                <p>paroisse.sjmv@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7!2d2.58!3d6.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzAnMDAuMCJOIDLCsDM0JzAwLjAiRQ!5e0!3m2!1sfr!2sbj!4v123456789" 
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+        
+                <section class="intention-form">
+                    <div class="form-card">
+                        <h2>Demander une intention de messe</h2>
+                        <p class="form-intro">Confiez vos intentions (Action de grâce, défunt, santé) à la prière de la communauté.</p>
+                        
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="nom">Votre Nom complet</label>
+                                <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="intention">Objet de l'intention</label>
+                                <select id="intention" name="intention">
+                                    <option value="action-grace">Action de grâce</option>
+                                    <option value="defunt">Repos de l'âme d'un défunt</option>
+                                    <option value="sante">Pour la santé / Guérison</option>
+                                    <option value="autre">Autre intention particulière</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="date-messe">Date souhaitée</label>
+                                <input type="date" id="date-messe" name="date-messe" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="message">Détails de l'intention</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Précisez le nom du défunt ou l'objet de votre prière..."></textarea>
+                            </div>
+        
+                            <button type="submit" class="submit-btn">Envoyer la demande</button>
+                            <p class="note">Note : Une offrande de messe peut être déposée ultérieurement au secrétariat.</p>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer-content">
-                <p>Bienvenue à la paroisse Saint Jean Marie Vianney</p>
-                <p>Sota - Adjarra</p>
-                <p>Téléphone : +229 01 00 00 00 00</p>
+                <div class="footer-info">
+                    <h3>SJMV</h3>
+                    <p>Paroisse Saint Jean Marie Vianney</p>
+                    <p>Sota - Adjarra, Bénin</p>
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Téléphone :</strong> +229 01 00 00 00 00</p>
+                    <p>© 2026 - Tous droits réservés</p>
+                </div>
             </div>
         </footer>
     </div>

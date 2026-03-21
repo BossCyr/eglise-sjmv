@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paroisse Saint Jean Marie Vianney - Activités</title>
+    <title>Activités - Paroisse SJMV</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/app.js" defer></script>
 </head>
@@ -17,7 +17,7 @@
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="annonces.html">Annonces</a></li>
                         <li><a href="messes.html">Messes</a></li>
-                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="activites.html" class="active-link">Activités</a></li>
                         <li><a href="groupes.html">Groupes</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="paroisse.html">A propos</a></li>
@@ -31,25 +31,70 @@
             </div>
         </header>
         <main class="content">
-            <section class="activites">
-                <h2>Activités de la Paroisse</h2>
-                <div class="activites-container">
-                    <div class="activite-card">
-                        <h3>Evènement passé</h3>
-                        <p>Retraite spirituelle du mois de Février</p>
+            <section class="activites-hero">
+                <h1>Vie de la Paroisse</h1>
+                <p>Revivez nos moments forts et préparez les rencontres à venir.</p>
+            </section>
+        
+            <section class="activites-section">
+                <h2 class="section-title">📅 À venir</h2>
+                <div class="activites-grid">
+                    <div class="activite-card future">
+                        <div class="card-image">
+                            <img src="assets/images/saint-jean.jpg" alt="Saint Jean Marie Vianney">
+                            <span class="status-badge">Prochainement</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="context">Conférence des Jeunes</div>
+                            <h3>Édition 2026 : Foi et Modernité</h3>
+                            <p class="description">Un moment d'échange sur les défis de la jeunesse chrétienne aujourd'hui, inspiré par la vie de notre saint patron.</p>
+                            
+                            <ul class="details-list">
+                                <li><strong>📍 Lieu :</strong> Grande salle paroissiale</li>
+                                <li><strong>🗓️ Période :</strong> 25 Mars 2026, à partir de 14h</li>
+                            </ul>
+        
+                            <div class="costs-box">
+                                <h4>Frais de participation</h4>
+                                <div class="cost-item"><span>Participation :</span> <strong>Gratuit</strong></div>
+                                <div class="cost-item"><span>Tissu (Uniforme) :</span> <strong>5 000 FCFA</strong></div>
+                                <div class="cost-item"><span>Transport :</span> <strong>1 000 FCFA</strong></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="activite-card">
-                        <h3>Activité à venir</h3>
-                        <p>Conférence des jeunes le 25 mars</p>
+                </div>
+        
+                <h2 class="section-title">🕯️ Souvenirs</h2>
+                <div class="activites-grid">
+                    <div class="activite-card past">
+                        <div class="card-body">
+                            <div class="context">Retraite Spirituelle</div>
+                            <h3>Désert et Prière</h3>
+                            <p class="period">Du 10 au 12 Février 2026 • Monastère de Toffo</p>
+                            
+                            <p class="description">Dans le silence du monastère, 50 paroissiens ont médité sur le thème "Marcher avec le Christ". Les enseignements du Père Curé ont marqué les esprits.</p>
+                            
+                            <div class="event-gallery">
+                                <img src="assets/images/retraite1.jpg" alt="Moment de prière">
+                                <img src="assets/images/retraite2.jpg" alt="Photo de groupe">
+                                <img src="assets/images/retraite3.jpg" alt="Le monastère">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="footer-content">
-                <p>Bienvenue à la paroisse Saint Jean Marie Vianney</p>
-                <p>Sota - Adjarra</p>
-                <p>Téléphone : +229 01 00 00 00 00</p>
+                <div class="footer-info">
+                    <h3>SJMV</h3>
+                    <p>Paroisse Saint Jean Marie Vianney</p>
+                    <p>Sota - Adjarra, Bénin</p>
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Téléphone :</strong> +229 01 00 00 00 00</p>
+                    <p>© 2026 - Tous droits réservés</p>
+                </div>
             </div>
         </footer>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paroisse Saint Jean Marie Vianney</title>
+    <title>Paroisse SJMV</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/app.js" defer></script>
 </head>
@@ -14,7 +14,7 @@
                 <h1 class="logo">SJMV</h1>
                 <nav class="nav">
                     <ul class="nav-links">
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html" class="active-link">Accueil</a></li>
                         <li><a href="annonces.html">Annonces</a></li>
                         <li><a href="messes.html">Messes</a></li>
                         <li><a href="activites.html">Activités</a></li>
@@ -22,7 +22,7 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="paroisse.html">A propos</a></li>
                     </ul>
-                    <div class="menu-toggle">
+                    <div class="menu-toggle" id="mobile-menu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -32,26 +32,86 @@
         </header>
 
         <main class="content">
-            <section class="hero">
-                <h2>Bienvenue à la paroisse Saint Jean Marie Vianney</h2>
-                <p>Sota - Adjarra</p>
-                <a href="messes.html" class="btn">Voir les messes</a>
-            </section>
-            <section class="home-messes">
-                <h2>Prochaines messes</h2>
-                <div class="messes-container">
-                    <div class="messe-card">
-                        <h3>Dimanche</h3>
-                        <p>06h00 - 07h30 - 09h30</p>
+            <section class="hero-home">
+                <div class="hero-overlay"></div>
+                <div class="hero-text">
+                    <span class="subtitle">Paroisse Saint Jean Marie Vianney de Sota</span>
+                    <h1>Un lieu de prière, de communion et d'amour fraternel</h1>
+                    <div class="hero-actions">
+                        <a href="messes.html" class="btn btn-primary">Voir les messes</a>
+                        <a href="paroisse.html" class="btn btn-outline">Découvrir la paroisse</a>
                     </div>
                 </div>
             </section>
-            <section class="home-annonces">
-                <h2>Dernières annonces</h2>
-                <div class="annonces-container">
-                    <div class="annonce-card">
-                        <span class="date">20 Mars 2026</span>
-                        <h3>Réunion des jeunes</h3>
+        
+            <section class="home-pastoral">
+                <div class="container">
+                    <div class="pastoral-card">
+                        <div class="pastoral-img">
+                            <img src="assets/images/img-cure.JPG" alt="Père Firmin LOKO">
+                        </div>
+                        <div class="pastoral-content">
+                            <span class="label">Le mot du Curé</span>
+                            <h2>"Soyez les bienvenus chez vous"</h2>
+                            <p>Chers paroissiens, chers visiteurs, que la grâce de notre Seigneur vous accompagne. À l'image de notre saint patron, le Curé d'Ars, nous voulons faire de cette paroisse un phare de miséricorde à Adjarra.</p>
+                            <p class="signature">Père Firmin LOKO Sonagnon</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="home-messes">
+                <div class="container">
+                    <h2 class="section-title">Prochaines Messes</h2>
+                    <div class="messes-preview">
+                        <div class="preview-card">
+                            <span class="day">Dimanche</span>
+                            <div class="hours">
+                                <span>06h00</span> • <span>07h30</span> • <span>09h30</span>
+                            </div>
+                        </div>
+                        <div class="preview-card">
+                            <span class="day">En semaine</span>
+                            <div class="hours">
+                                <span>Lundi : 06h10</span> • <span>Mardi : 18h30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="home-news">
+                <div class="container">
+                    <div class="news-grid">
+                        <div class="news-column">
+                            <h2 class="section-title">Dernières Annonces</h2>
+                            <div class="mini-annonces">
+                                <article class="mini-card">
+                                    <span class="date">20 Mars</span>
+                                    <div class="mini-text">
+                                        <h3>Réunion des jeunes</h3>
+                                        <p>Préparez la conférence du 25 mars...</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <a href="annonces.html" class="link-more">Toutes les annonces →</a>
+                        </div>
+        
+                        <div class="news-column">
+                            <h2 class="section-title">Activités Récentes</h2>
+                            <div class="mini-annonces">
+                                <article class="mini-card">
+                                    <div class="mini-img">
+                                        <img src="assets/images/retraite-thumb.jpg" alt="Retraite">
+                                    </div>
+                                    <div class="mini-text">
+                                        <h3>Retraite de Février</h3>
+                                        <p>Revivez les moments de prière au monastère...</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <a href="activites.html" class="link-more">Découvrir la vie paroissiale →</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -59,9 +119,15 @@
 
         <footer class="footer">
             <div class="footer-content">
-                <p>Bienvenue à la paroisse Saint Jean Marie Vianney</p>
-                <p>Sota - Adjarra</p>
-                <p>Téléphone : +229 01 00 00 00 00</p>
+                <div class="footer-info">
+                    <h3>SJMV</h3>
+                    <p>Paroisse Saint Jean Marie Vianney</p>
+                    <p>Sota - Adjarra, Bénin</p>
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Téléphone :</strong> +229 01 00 00 00 00</p>
+                    <p>© 2026 - Tous droits réservés</p>
+                </div>
             </div>
         </footer>
     </div>

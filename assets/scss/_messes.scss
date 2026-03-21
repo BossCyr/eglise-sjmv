@@ -1,34 +1,110 @@
-.messes {
-    padding: 40px;
+.messes-hero {
+    padding: 60px 20px;
     text-align: center;
+    background: $primary;
+    color: white;
 
-    h2 {
-        margin-bottom: 30px;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-style: italic;
+        color: $secondary;
+        margin-top: 10px;
     }
 }
 
+.messes-schedule {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .messes-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
 }
 
 .messe-card {
-    background: $bg_light;
-    padding: 20px;
-    border-radius: $radius;
-    width: 250px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba($primary, 0.05);
+    background: $bg-card;
+    box-shadow: $shadow;
+    border-radius: 15px;
+    padding: 40px 30px;
     transition: transform 0.3s;
+
+    .card-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
 
     h3 {
         color: $primary;
-        margin-bottom: 8px;
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 3px; background: $secondary;
+        }
+    }
+
+    .schedule-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px dashed rgba($primary, 0.1) ;
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        .time {
+            font-weight: 700;
+            color: $secondary;
+            padding: 4px 12px;
+            background: rgba($secondary, 0.1);
+            border-radius: 5px;
+        }
+
+        .event, .day {
+            font-weight: 500;
+            color: $primary;
+        }
+
+        .desc {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
     }
 
     &:hover {
         transform: translateY(-5px);
+        box-shadow: 0 15px 50px rgba(27, 38, 59, 0.1);
+    }
+
+    &.highlight {
+        background: linear-gradient(to bottom, #ffffff, #fffdf5);
+        border: 1px solid rgba($secondary, 0.3);
+    }
+
+    &.special {
+        background: $text-main;
+        h3, .event, .desc {
+            color: white;
+        }
+
+        .schedule-row {
+            border-bottom-color: rgba(255,255,255,0.1);
+        }
     }
 }
 

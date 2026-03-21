@@ -8,6 +8,7 @@
 @import 'paroisse';
 @import 'activites';
 @import 'groupes';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +18,14 @@ html, body{
     height: 100%;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-color: $bg-main;
+    color: $text-main;
+    line-height: 1.6;
+    font-weight: 450;
+    h1, h2, h3 {
+        font-family: 'Playfair Display', sherif;
+    }
 }
 
 .page {

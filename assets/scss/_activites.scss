@@ -1,40 +1,110 @@
-.activites {
-    padding: 40px;
+.activites-hero {
+    padding: 60px 20px;
     text-align: center;
-
-    h2 {
-        margin-bottom: 30px;
+    background: $primary;
+    h1 {
+        font-size: 2.5rem;
+        color: white;
+    }
+    p{
+        margin-top: 10px;
+        color: $secondary;
+        font-style: italic;
     }
 }
 
-.activites-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.activites-section {
+    max-width: 1200px;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
 
-    .activite-card {
-        background: $bg_light;
-        padding: 20px;
-        width: 250px;
-        border-radius: $radius;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+.section-title{
+    color: $primary;
+    margin: 40px 0 20px;
+    border-bottom: 2px solid rgba($secondary, 0.3);
+    display: inline-block;
+}
+.activites-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+.activite-card {
+        background: $bg-card;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-radius: 15px;
+        overflow: hidden;
         transition: transform 0.3s;
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .context {
+            color: $secondary;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
 
         h3 {
             color: $primary;
-            margin-bottom: 10px;
+            margin:5px 0 15px;
+        }
+
+        .description  {
+            color: #555; font-size: 0.95rem; margin-bottom: 20px;
         }
 
         &:hover {
             transform: translateY(-5px);
+            box-shadow: $shadow;
+        }
+}
+
+.future {
+    border-left: 5px solid $secondary;
+    .card-image {
+        position: relative;
+        height: 200px;
+        img { width: 100%; height: 100%; object-fit: cover; }
+        .status-badge {
+            position: absolute; top: 15px; right: 15px;
+            background: $secondary; color: $primary;
+            padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.7rem;
+        }
+    }
+    .details-list{
+        list-style: none; margin-bottom: 20px;
+        li{ font-size: 0.9rem; margin-bottom: 5px; color: $primary;}
+    }
+    .costs-box{
+        background: $bg_main;
+        padding: 15px;
+        border-radius: 10px;
+        h4 { font-size: 0.85; margin-bottom: 10px; color: $primary; border-bottom: 1px solid rgba($primary, 0.1); }
+        .cost-item {
+            display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 3px;
+            strong { color: $primary;}
         }
     }
 }
 
-@media (max-width: 768px) {
-    .activites-container{
-        flex-direction: column;
-        align-items: center;
+.past {
+    background: linear-gradient(to bottom right, $bg-card, $bg-main);
+    border: 1px solid rgba($primary, 0.05);
+    .period{ font-size: 0.85; font-style: italic; color: #888; margin-bottom: 15px;}
+    .event-gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+        img{
+            width: 100%; height: 80px; object-fit: cover; border-radius: 8px;
+            cursor: pointer; transition: 0.3s;
+            &:hover{filter: brightness(1.1);}
+        }
     }
 }
